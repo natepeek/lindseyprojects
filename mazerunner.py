@@ -17,5 +17,4 @@ EAST = 'EAST'
 WEST = 'WEST'
 
 def wallStrToWallDict(wallStr):
-    """Takes a string representationof a wall drawing 
-    
+    """Takes a string representationof a wall drawing """
