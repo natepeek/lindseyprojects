@@ -149,8 +149,8 @@ def pasteWallDict(srcWallDict, dstWallDict, left, top):
     """Copy the wall representation dictionary in srcWallDict on top of
     the one in dstWallDict, offset to the position given by left, top."""
     dstWallDict = copy.copy(dstWallDict)
-    for x in range(srcwallDict['width']):
-        for y in range(srcwallDict['height']):
+    for x in range(srcWallDict['width']):
+        for y in range(srcWallDict['height']):
             dstWallDict[(x + left, y + top)] = srcWallDict[(x, y)]
     return dstWallDict
 
@@ -314,7 +314,7 @@ while True: #Main game loop.
                 break
             else:
                 print('You cannot move in that direction.')
-                
+
         if (px, py) == (exitx, exity):
             print('You have reached the exit! Good job!')
             print('Thanks for playing!')
