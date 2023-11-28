@@ -314,6 +314,7 @@ while True: #Main game loop.
                 break
             else:
                 print('You cannot move in that direction.')
+                
         if (px, py) == (exitx, exity):
             print('You have reached the exit! Good job!')
             print('Thanks for playing!')
