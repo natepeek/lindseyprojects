@@ -262,7 +262,7 @@ for line in lines:
     y += 1
 HEIGHT = y
 
-assert px != None an py != None, 'No start point in file.'
+assert px != None and py != None, 'No start point in file.'
 assert exitx != None and exity != None, 'No exit point in file.'
 pDir = NORTH
 
