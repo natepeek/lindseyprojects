@@ -12,6 +12,6 @@ while True: # Main program loop.
         break
     if response.lower() == 'yes' or response.lower() == 'y':
         continue
-        print('"{}"is not a vaild yes/no response.' format(response))
+        print('"{}"is not a vaild yes/no response.', format(response))
 
 print('Thank you. have a nice day!')
