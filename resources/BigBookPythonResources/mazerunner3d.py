@@ -1,7 +1,7 @@
-"""Maze 3D, by AL Sweigart al@inventwithpython.com
-Move around the maze and try to escape... in 3D!
-View the code in thier book
-Tags: extra-large, artistic, game, maze"""
+"""Maze 3D, by Al Sweigart al@inventwithpython.com
+Move around a maze and try to escape... in 3D!
+This code is available at https://nostarch.com/big-book-small-python-programming
+Tags: extra-large, artistic, maze, game"""
 
 import copy, sys, os
 
@@ -10,7 +10,7 @@ WALL = '#'
 EMPTY = ' '
 START = 'S'
 EXIT = 'E'
-BLOCK = chr(9617)
+BLOCK = chr(9617)  # Character 9617 is '░'
 NORTH = 'NORTH'
 SOUTH = 'SOUTH'
 EAST = 'EAST'
@@ -18,8 +18,8 @@ WEST = 'WEST'
 
 
 def wallStrToWallDict(wallStr):
-    """Takes a string representation of a wall drawing 
-    ALL_OPEN or CLOSED and returns a representation in a dictionary
+    """Takes a string representation of a wall drawing (like those in
+    ALL_OPEN or CLOSED) and returns a representation in a dictionary
     with (x, y) tuples as keys and single-character strings of the
     character to draw at that x, y location."""
     wallDict = {}
