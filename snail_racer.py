@@ -8,7 +8,7 @@ import random, time, sys
 # Set up the constants:
 MAX_NUM_SNAILS = 8
 MAX_NAME_LENGTH = 20
-FINISH_LINE = 40 # (!) Try modifying this number.
+FINISH_LINE = 80 # (!) Try modifying this number.
 
 print('''Snail Race, by Al Sweigart al@inventwithpython.com
 
@@ -66,7 +66,7 @@ while True: # Main program loop.
     # (!) EXPERIMENT: Add a cheat here that increases a snail's progress
     # if it has your name
 
-    time.sleep(0.5) # (!) EXPERIMENT: Try changing this value.
+    time.sleep(0.01) # (!) EXPERIMENT: Try changing this value.
 
     # (!) EXPERIMENT: What happens if you comment this line out?
     print('\n' * 40)
@@ -79,4 +79,4 @@ while True: # Main program loop.
     for snailName in snailNames:
         spaces = snailProgress[snailName]
         print((' ' * spaces) + snailName[:MAX_NAME_LENGTH])
-        print(('.' * snailProgress[snailName]) + '@v')
+        print(('_' * snailProgress[snailName]) + '@v')
